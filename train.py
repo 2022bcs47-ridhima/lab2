@@ -24,8 +24,9 @@ X_test = scaler.transform(X_test)
 
 # Train the Model
 
-from sklearn.linear_model import Ridge
-model = Ridge(alpha=1.0)
+from sklearn.linear_model import Lasso
+model = Lasso(alpha=0.1)
+
 
 model.fit(X_train, y_train)
 
